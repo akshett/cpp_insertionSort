@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-void insertionSort(int *arr, int n)
+template<typename T>
+void insertionSort(T *arr, int n)
 {
 	int size = n;
 	for (int j = 1; j < size; ++j){
@@ -32,4 +33,7 @@ int main(){
 	for (int i = 0;i<size;++i){
 		cout <<arr[i] << "    ";
 	}
+
+	cout << '\n';
+	return 0;
 }
